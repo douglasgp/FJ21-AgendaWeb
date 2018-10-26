@@ -56,12 +56,12 @@ public class ContatoDao {
 				contato.setEmail(rs.getString("email"));
 				contato.setEndereco(rs.getString("endereco"));
 
-				// montando a data atravÃ©s do Calendar
+				// montando a data através do Calendar
 				Calendar data = Calendar.getInstance();
 				data.setTime(rs.getDate("dataNascimento"));
 				contato.setDataNascimento(data);
 
-				// adiciona o objeto Ã  lista
+				// adiciona o objeto à lista
 				contatos.add(contato);
 			}
 			rs.close();
